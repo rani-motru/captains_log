@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const morgan = require("morgan");
 const methodOverride = require('method-override');
 const routes = require('./controllers/log.js');
-
+const PORT = process.env.PORT || 3003;
 const app = express();
 // const Log = require('./models/logs');
 const jsxViewEngine = require('jsx-view-engine');
@@ -41,6 +41,6 @@ app.get('/', (req, res) => {
 
 
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
     console.log('listening');
 });
