@@ -36,7 +36,7 @@ app.use('/logs', routes)
 
 
 app.get('/', (req, res) => {
-    res.send("This is Captain's Ship Log!");
+    res.send("This is Captain's Ship <a href='/logs'> Log!</a>");
 });
 
 
